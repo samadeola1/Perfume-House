@@ -1,4 +1,4 @@
-[
+ export const perfumes = [ 
   {
     id: 1,
     image:
@@ -60,3 +60,4 @@
     discountPrice: "4,000",
   },
 ];
+
