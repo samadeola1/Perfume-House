@@ -6,13 +6,13 @@ import Cart from "../features/Cart";
 const Home = () => {
   return (
     <>
-      <main className="container mx-auto p-[25px] md:px-[15px] lg:py-[33px] lg:px-[99px] md:grid grid-cols-3 gap-12">
+      <main className="container mx-auto p-[25px] md:px-[15px] lg:py-[33px] lg:px-[99px] md:grid grid-cols-3">
         <section className="col-span-2">
-         <Products/>
+          <Products />
         </section>
 
-        <section className="border">
-          <Cart/>
+        <section className="border border-[#D0D0D0] h-[600.55px] w-full ">
+          <Cart />
         </section>
       </main>
     </>

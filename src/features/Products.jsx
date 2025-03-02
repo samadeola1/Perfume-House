@@ -6,18 +6,18 @@ const Products = () => {
   return (
     <>
       <main className="">
-        <div className="md:grid grid-cols-3 gap-[34px]">
+        <div className="md:grid grid-cols-3 gap-[0px]">
           {perfumes.map((perfume) => {
             return (
               <div
                 key={perfume.id}
-                className="card bg-base-100 w-[335.55px] md:w-[160.62px] lg:w-[250.62px] md:h-[415.55px] border-[1.14px] border-[#F3F2FB] rounded-[4.56px]  shadow-sm "
+                className="card bg-base-100 lg:w-[220.62px] md:h-[415.55px] border-[1.14px] border-[#F3F2FB] rounded-[4.56px]  shadow-sm mb-10 "
               >
                 <figure>
-                  <img className="" src={perfume.image} alt={perfume.title} />
+                  <img className="w-full" src={perfume.image} alt={perfume.title} />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title text[15px] whitespace-normal">
+                  <h2 className="card-title text[15px]">
                     {perfume.title}
                   </h2>
                   <p>
@@ -31,8 +31,8 @@ const Products = () => {
                       N{perfume.discountPrice}
                     </span>
                   </div>
-                  <div className="card-actions justify-end">
-                    <button className="btn bg-[#8D34FF] text-white w-full">
+                  <div className="card-actions justify-center">
+                    <button className="btn bg-[#8D34FF] text-white w-full h[40px] rounded-[8px] text-[16px] font-[500] font-poppins">
                       Add to cart
                     </button>
                   </div>
