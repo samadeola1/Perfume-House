@@ -20,13 +20,21 @@ const Cart = () => {
               alt={findPerfume3.title}
             />
             <div>
-              <p className="px-5">{findPerfume3.title}</p>
-              <button className="px-5">-</button>
+              <p className="px-5 pb-2">{findPerfume3.title}</p>
+              <button className="mx-5 bg-[#D2D2D2] text-white w-[18px]">
+                -
+              </button>
               <span>1</span>
-              <button className="px-5">+</button>
-              <div className="px-5 flex">
-                <h1>{findPerfume3.price}</h1>
-                <button className="mx-20">Remove</button>
+              <button className="mx-5 bg-[#8D34FF] text-white w-[18px]">
+                +
+              </button>
+              <div className="px-5 pt-2 flex gap-8">
+                <h1 className="text-[18px] font-semibold">
+                  N{findPerfume3.price}
+                </h1>
+                <button className="border border-[#FF4034] text-[#FF4034] px-[18px] rounded-[3.5px]">
+                  Remove
+                </button>
               </div>
             </div>
           </div>
@@ -38,13 +46,21 @@ const Cart = () => {
               alt={findPerfume6.title}
             />
             <div>
-              <p className="px-5">{findPerfume6.title}</p>
-              <button className="px-5">-</button>
+              <p className="px-5 pb-2">{findPerfume6.title}</p>
+              <button className="mx-5 bg-[#D2D2D2] text-white w-[18px]">
+                -
+              </button>
               <span>1</span>
-              <button className="px-5">+</button>
-              <div className="px-5 flex">
-                <h1>{findPerfume6.price}</h1>
-                <button className="mx-20">Remove</button>
+              <button className="mx-5 bg-[#8D34FF] text-white w-[18px]">
+                +
+              </button>
+              <div className="px-5 pt-2 flex gap-8">
+                <h1 className="text-[18px] font-semibold">
+                  N{findPerfume6.price}
+                </h1>
+                <button className="border border-[#FF4034] text-[#FF4034] px-[18px] rounded-[3.5px]">
+                  Remove
+                </button>
               </div>
             </div>
           </div>
@@ -56,34 +72,42 @@ const Cart = () => {
               alt={findPerfume2.title}
             />
             <div>
-              <p className="px-5">{findPerfume2.title}</p>
-              <button className="px-5">-</button>
+              <p className="px-5 pb-2">{findPerfume2.title}</p>
+              <button className="mx-5 bg-[#D2D2D2] text-white w-[18px]">
+                -
+              </button>
               <span>1</span>
-              <button className="px-5">+</button>
-              <div className="px-5 flex">
-                <h1>{findPerfume2.price}</h1>
-                <button className="mx-20">Remove</button>
+              <button className="mx-5 bg-[#8D34FF] w-[18px] text-white">
+                +
+              </button>
+              <div className="px-5 pt-2 flex gap-8">
+                <h1 className="text-[18px] font-semibold">
+                  N{findPerfume2.price}
+                </h1>
+                <button className="border border-[#FF4034] text-[#FF4034] px-[18px] rounded-[3.5px]">
+                  Remove
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-between py-4">
           <p>sub Total</p>
-          <h2>9000</h2>
+          <h2>9,000</h2>
         </div>
         <div className="flex justify-between pb-4">
           <p>Delivery</p>
-          <h2>2000</h2>
+          <h2>2,000</h2>
         </div>
         <div className="flex justify-between">
           <p>Total</p>
-          <h2>11000</h2>
+          <h2>11,000</h2>
         </div>
         {/* div fot confirm order modal */}
         <div>
           {/* Open the modal using document.getElementById('ID').showModal() method */}
           <button
-            className="btn my-10 w-full"
+            className="btn my-10 w-full h-[58px] bg-[#8D34FF] text-white rounded-[10px]"
             onClick={() => document.getElementById("my_modal_1").showModal()}
           >
             Confirm Order
@@ -97,7 +121,9 @@ const Cart = () => {
               <div className="modal-action">
                 <form method="dialog">
                   {/* if there is a button in form, it will close the modal */}
-                  <button className="btn">Start New Order</button>
+                  <button className="btn bg-[#8D34FF] text-white rounded-[4px] w-70">
+                    Start New Order
+                  </button>
                 </form>
               </div>
             </div>

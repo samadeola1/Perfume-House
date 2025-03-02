@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <>
       <main className="">
-        <div className="md:grid grid-cols-3 gap-[0px]">
+        <div className="md:grid grid-cols-3 md:gap-[20px] lg:gap-[px]">
           {perfumes.map((perfume) => {
             return (
               <div

@@ -11,7 +11,7 @@ const Home = () => {
           <Products />
         </section>
 
-        <section className="border border-[#D0D0D0] h-[600.55px] w-full ">
+        <section className="border-[1.14px] border-[#D0D0D0] h-[680.55px] w-[330px] lg:mx-6 rounded-[5px] ">
           <Cart />
         </section>
       </main>
