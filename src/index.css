@@ -6,3 +6,10 @@
   --font-sansita: "Sansita", serif; 
   --font-poppins:"Poppins", serif;
 }
+
+.main-wrapper{
+  @apply bg-[url("./assets/Auth-bgrc.png")]
+}
+input{
+  @apply border-[2.5px] border-gray-300 rounded-lg
+}
